@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Example</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        #buttonContainer {
+            text-align: center;
+        }
+        #bigText {
+            display: none;
+            font-size: 3em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttonContainer">
+        <button id="showTextButton">押すなよ</button>
+        <div id="bigText">しんでくれ</div>
+    </div>
+
+    <script>
+        document.getElementById('showTextButton').addEventListener('click', function() {
+            document.getElementById('bigText').style.display = 'block';
+        });
+    </script>
+</body>
+</html>
